@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:padding="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ubicacionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/opc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botón único para seleccionar día o mes según opción -->
+    <Button
+        android:id="@+id/fechaSelectorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccionar_fecha"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/blue_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valores_de_oxigeno"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChartOxigen"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_marginBottom="16dp" />
+
+            <TableLayout
+                android:id="@+id/tableLayoutOxigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="@color/table_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valores_de_ph"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChartPH"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_marginBottom="16dp" />
+
+            <TableLayout
+                android:id="@+id/tableLayoutPH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="@color/table_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valores_de_temperatura"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChartTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="400sp" />
+
+            <TableLayout
+                android:id="@+id/tableLayoutTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="@color/table_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resumen_estadistico"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TableLayout
+                android:id="@+id/tableLayoutResumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="@color/table_bg" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+

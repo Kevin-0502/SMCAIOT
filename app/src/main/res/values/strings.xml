@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SMCAIOT</string>
+    <string name="app_title">Sistema de monitoreo</string>
+    <string name="button">Button</string>
+    <string name="grafica_diaria">Grafica diaria </string>
+    <string name="grafica_mensual">Grafica mensual </string>
+    <string name="reporte_diario">Reporte diario </string>
+    <string name="reporte_mensual">Reporte mensual </string>
+    <string name="resumen_estadistico">Resumen Estadístico 📊</string>
+    <string name="valores_de_temperatura">Valores de Temperatura 🌡️</string>
+    <string name="valores_de_ph">Valores de PH 💧</string>
+    <string name="valores_de_oxigeno">Valores de Oxigeno 0️⃣</string>
+    <string name="seleccionar_fecha">Seleccionar fecha 📅</string>
+</resources>
